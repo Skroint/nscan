@@ -1,0 +1,5 @@
+default gateway
+colors
+nbns
+smb
+http

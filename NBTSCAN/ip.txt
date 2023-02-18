@@ -1,0 +1,18 @@
+
+Windows IP Configuration
+
+
+Ethernet adapter Ethernet:
+
+   Connection-specific DNS Suffix  . : 
+   Link-local IPv6 Address . . . . . : fe80::9c69:ad97:ae29:6523%14
+   IPv4 Address. . . . . . . . . . . : 192.168.1.11
+   Subnet Mask . . . . . . . . . . . : 255.255.255.0
+   Default Gateway . . . . . . . . . : 192.168.1.1
+
+Tunnel adapter Teredo Tunneling Pseudo-Interface:
+
+   Connection-specific DNS Suffix  . : 
+   IPv6 Address. . . . . . . . . . . : 2001:0:4137:9e76:24c1:22ec:a101:c41f
+   Link-local IPv6 Address . . . . . : fe80::24c1:22ec:a101:c41f%6
+   Default Gateway . . . . . . . . . : ::
