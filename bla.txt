@@ -1,0 +1,8 @@
+Choose NIC
+Compute possible IPs
+Scan for ips (ARP)
+Scan for ips (ICMP)
+Scan for ips (Common ports)
+COmpile scan lists
+Check ICMP/ARP/NBNS
+Optional port scan
