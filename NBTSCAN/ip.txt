@@ -5,14 +5,40 @@ Windows IP Configuration
 Ethernet adapter Ethernet:
 
    Connection-specific DNS Suffix  . : 
-   Link-local IPv6 Address . . . . . : fe80::9c69:ad97:ae29:6523%14
-   IPv4 Address. . . . . . . . . . . : 192.168.1.11
+   Link-local IPv6 Address . . . . . : fe80::7f95:70cb:da6b:7909%7
+   IPv4 Address. . . . . . . . . . . : 192.168.1.10
    Subnet Mask . . . . . . . . . . . : 255.255.255.0
    Default Gateway . . . . . . . . . : 192.168.1.1
 
-Tunnel adapter Teredo Tunneling Pseudo-Interface:
+Ethernet adapter Ethernet 3:
 
    Connection-specific DNS Suffix  . : 
-   IPv6 Address. . . . . . . . . . . : 2001:0:4137:9e76:24c1:22ec:a101:c41f
-   Link-local IPv6 Address . . . . . : fe80::24c1:22ec:a101:c41f%6
-   Default Gateway . . . . . . . . . : ::
+   Link-local IPv6 Address . . . . . : fe80::51e9:2b7a:4025:1872%12
+   IPv4 Address. . . . . . . . . . . : 192.168.56.1
+   Subnet Mask . . . . . . . . . . . : 255.255.255.0
+   Default Gateway . . . . . . . . . : 
+
+Unknown adapter Anslutning till lokalt n„tverk:
+
+   Media State . . . . . . . . . . . : Media disconnected
+   Connection-specific DNS Suffix  . : 
+
+Unknown adapter Anslutning till lokalt n„tverk 2:
+
+   Media State . . . . . . . . . . . : Media disconnected
+   Connection-specific DNS Suffix  . : 
+
+Wireless LAN adapter Wi-Fi:
+
+   Media State . . . . . . . . . . . : Media disconnected
+   Connection-specific DNS Suffix  . : 
+
+Wireless LAN adapter Anslutning till lokalt n„tverk* 1:
+
+   Media State . . . . . . . . . . . : Media disconnected
+   Connection-specific DNS Suffix  . : 
+
+Wireless LAN adapter Anslutning till lokalt n„tverk* 3:
+
+   Media State . . . . . . . . . . . : Media disconnected
+   Connection-specific DNS Suffix  . : 
