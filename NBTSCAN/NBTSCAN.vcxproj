@@ -120,18 +120,31 @@
     <ClCompile Include="adapter_scan.cpp" />
     <ClCompile Include="arp_request.cpp" />
     <ClCompile Include="console_color.cpp" />
+    <ClCompile Include="device.cpp" />
+    <ClCompile Include="device_address.cpp" />
+    <ClCompile Include="device_manager.cpp" />
     <ClCompile Include="headers.cpp" />
+    <ClCompile Include="host.cpp" />
+    <ClCompile Include="host_scanner.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="target.cpp" />
+    <ClCompile Include="tcp_host_scanner.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="adapter.h" />
     <ClInclude Include="adapter_scan.h" />
     <ClInclude Include="arp_request.h" />
     <ClInclude Include="console_color.h" />
+    <ClInclude Include="device.h" />
+    <ClInclude Include="device_address.h" />
+    <ClInclude Include="device_loading.h" />
+    <ClInclude Include="device_manager.h" />
     <ClInclude Include="headers.h" />
+    <ClInclude Include="host.h" />
+    <ClInclude Include="host_scanner.h" />
     <ClInclude Include="main.h" />
     <ClInclude Include="target.h" />
+    <ClInclude Include="tcp_host_scanner.h" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="TODO.txt" />

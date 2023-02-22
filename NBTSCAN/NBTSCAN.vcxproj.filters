@@ -13,6 +13,21 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Source Files\Device">
+      <UniqueIdentifier>{953849f1-7e9e-47bc-8fcd-f807fc4495c1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Device">
+      <UniqueIdentifier>{30747d02-4f7f-4f2c-86f3-afb3cc08f666}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\HostScanning">
+      <UniqueIdentifier>{5dcea815-73b9-45e8-9c87-14498fcdaa0e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\HostScanning">
+      <UniqueIdentifier>{95ea19f2-bb6f-442b-991b-ed33225e30dc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Host">
+      <UniqueIdentifier>{1143ce5e-8faf-4935-9343-461f6fa87a4b}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -36,6 +51,24 @@
     <ClCompile Include="console_color.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="device.cpp">
+      <Filter>Source Files\Device</Filter>
+    </ClCompile>
+    <ClCompile Include="host_scanner.cpp">
+      <Filter>Source Files\HostScanning</Filter>
+    </ClCompile>
+    <ClCompile Include="tcp_host_scanner.cpp">
+      <Filter>Source Files\HostScanning</Filter>
+    </ClCompile>
+    <ClCompile Include="device_manager.cpp">
+      <Filter>Source Files\Device</Filter>
+    </ClCompile>
+    <ClCompile Include="host.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="device_address.cpp">
+      <Filter>Source Files\Device</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="main.h">
@@ -58,6 +91,27 @@
     </ClInclude>
     <ClInclude Include="console_color.h">
       <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="device.h">
+      <Filter>Header Files\Device</Filter>
+    </ClInclude>
+    <ClInclude Include="device_loading.h">
+      <Filter>Header Files\Device</Filter>
+    </ClInclude>
+    <ClInclude Include="host_scanner.h">
+      <Filter>Header Files\HostScanning</Filter>
+    </ClInclude>
+    <ClInclude Include="tcp_host_scanner.h">
+      <Filter>Header Files\HostScanning</Filter>
+    </ClInclude>
+    <ClInclude Include="device_manager.h">
+      <Filter>Header Files\Device</Filter>
+    </ClInclude>
+    <ClInclude Include="host.h">
+      <Filter>Header Files\Host</Filter>
+    </ClInclude>
+    <ClInclude Include="device_address.h">
+      <Filter>Header Files\Device</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
