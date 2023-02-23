@@ -51,9 +51,6 @@
     <ClCompile Include="console_color.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="device.cpp">
-      <Filter>Source Files\Device</Filter>
-    </ClCompile>
     <ClCompile Include="host_scanner.cpp">
       <Filter>Source Files\HostScanning</Filter>
     </ClCompile>
@@ -67,6 +64,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="device_address.cpp">
+      <Filter>Source Files\Device</Filter>
+    </ClCompile>
+    <ClCompile Include="ipv4_address.cpp">
       <Filter>Source Files\Device</Filter>
     </ClCompile>
   </ItemGroup>
@@ -92,12 +92,6 @@
     <ClInclude Include="console_color.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="device.h">
-      <Filter>Header Files\Device</Filter>
-    </ClInclude>
-    <ClInclude Include="device_loading.h">
-      <Filter>Header Files\Device</Filter>
-    </ClInclude>
     <ClInclude Include="host_scanner.h">
       <Filter>Header Files\HostScanning</Filter>
     </ClInclude>
@@ -111,6 +105,9 @@
       <Filter>Header Files\Host</Filter>
     </ClInclude>
     <ClInclude Include="device_address.h">
+      <Filter>Header Files\Device</Filter>
+    </ClInclude>
+    <ClInclude Include="ipv4_address.h">
       <Filter>Header Files\Device</Filter>
     </ClInclude>
   </ItemGroup>
