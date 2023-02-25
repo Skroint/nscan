@@ -9,7 +9,7 @@ device_address device_address::from_addr_ptr(pcap_addr_t* addr_ptr,
 {
 	device_address address;
 
-	dev_ptr.
+//	dev_ptr.
 
 	// Store npcap pointers
 	address.addr_ptr = addr_ptr;

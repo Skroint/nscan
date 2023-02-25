@@ -1,8 +1,9 @@
 #include "device_manager.h"
 #include <string>
 #include <iostream>
-
-
+#include <iphlpapi.h>
+#include <sstream>
+#include <iomanip>
 device_manager::device_manager()
 {
 	load_devices();
@@ -69,6 +70,54 @@ void device_manager::print_all_addresses()
 		std::cout << address.device_name << " " << address.ip.to_string() << " " << address.mask.to_string() << std::endl;
 		index++;
 	}
+}
+
+std::string hexStr(const uint8_t* data, int len)
+{
+	std::stringstream ss;
+	ss << std::hex;
+
+	for (int i(0); i < len; ++i)
+		ss << std::setw(2) << std::setfill('0') << (int)data[i];
+
+	return ss.str();
+}
+
+void device_manager::test_print()
+{
+	IP_ADAPTER_INFO* pAdapterInfo = nullptr;
+	ULONG ulOutBufLen = 0;
+	
+	if (GetAdaptersInfo(pAdapterInfo, &ulOutBufLen) == ERROR_BUFFER_OVERFLOW)
+	{
+		free(pAdapterInfo);
+		pAdapterInfo = (PIP_ADAPTER_INFO)malloc(ulOutBufLen);
+	}
+	GetAdaptersInfo(pAdapterInfo, &ulOutBufLen);
+	
+	while (pAdapterInfo)
+	{
+		std::cout << "Name: " << pAdapterInfo->AdapterName << std::endl;
+		std::cout << "Desc: " << pAdapterInfo->Description << std::endl;
+
+		IP_ADDR_STRING* address = &pAdapterInfo->IpAddressList;
+		while (address)
+		{
+			std::cout << "IP: " << address->IpAddress.String << std::endl;
+			std::cout << "Mask: " << address->IpMask.String << std::endl;
+
+			address = address->Next;
+		}
+		std::cout << "Gateway: " << pAdapterInfo->GatewayList.IpAddress.String << std::endl;
+		std::cout << "Mac: " << hexStr(pAdapterInfo->Address, 6);
+		
+		std::cout << std::endl << std::endl;
+
+		
+		pAdapterInfo = pAdapterInfo->Next;
+	}
+
+	
 }
 
 

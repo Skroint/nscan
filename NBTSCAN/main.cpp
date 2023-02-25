@@ -77,7 +77,7 @@ int main()
 	}
 
 	device_manager manager;
-	manager.print_all_addresses();
+	manager.test_print();
 
 
 	std::cin.get();

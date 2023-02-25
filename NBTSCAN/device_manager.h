@@ -10,7 +10,7 @@ public:
 	~device_manager();
 	void print_all_addresses();
 	std::vector<device_address> get_all_addresses;
-	
+	void test_print();
 
 private:
 	void load_devices();
