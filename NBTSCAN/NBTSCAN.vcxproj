@@ -118,6 +118,7 @@
   <ItemGroup>
     <ClCompile Include="adapter.cpp" />
     <ClCompile Include="adapter_scan.cpp" />
+    <ClCompile Include="arp_host_scanner.cpp" />
     <ClCompile Include="arp_request.cpp" />
     <ClCompile Include="console_color.cpp" />
     <ClCompile Include="device_address.cpp" />
@@ -133,6 +134,7 @@
   <ItemGroup>
     <ClInclude Include="adapter.h" />
     <ClInclude Include="adapter_scan.h" />
+    <ClInclude Include="arp_host_scanner.h" />
     <ClInclude Include="arp_request.h" />
     <ClInclude Include="console_color.h" />
     <ClInclude Include="device_address.h" />
