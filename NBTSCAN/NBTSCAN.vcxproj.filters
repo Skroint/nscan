@@ -72,6 +72,12 @@
     <ClCompile Include="arp_host_scanner.cpp">
       <Filter>Source Files\HostScanning</Filter>
     </ClCompile>
+    <ClCompile Include="mac_address.cpp">
+      <Filter>Source Files\Device</Filter>
+    </ClCompile>
+    <ClCompile Include="console_tools.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="main.h">
@@ -115,6 +121,12 @@
     </ClInclude>
     <ClInclude Include="arp_host_scanner.h">
       <Filter>Header Files\HostScanning</Filter>
+    </ClInclude>
+    <ClInclude Include="mac_address.h">
+      <Filter>Header Files\Device</Filter>
+    </ClInclude>
+    <ClInclude Include="console_tools.h">
+      <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
