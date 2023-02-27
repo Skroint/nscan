@@ -39,7 +39,8 @@ void device_manager::load_devices()
 			dev_address.device_description = adapter->Description;
 			dev_address.mac = mac_address::from_octets(adapter->Address);
 		
-			dev_address.ip = ipv4_address::from_string(std::string(adapter_address->IpAddress.String));
+			std::string tesst = std::string(adapter_address->IpAddress.String);
+			dev_address.ip = ipv4_address::from_string(tesst);
 			dev_address.mask = ipv4_address::from_string(std::string(adapter_address->IpAddress.String));
 			
 			adapter_address = adapter_address->Next;

@@ -33,6 +33,7 @@ ipv4_address ipv4_address::from_string(std::string str)
             throw std::exception("Invalid character");
         }
     }
+    address.octets[octet_index] = (unsigned char)std::stoi(part);
 
     return address;
 }
