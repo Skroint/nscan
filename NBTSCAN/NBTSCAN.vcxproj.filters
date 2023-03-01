@@ -28,6 +28,12 @@
     <Filter Include="Header Files\Host">
       <UniqueIdentifier>{1143ce5e-8faf-4935-9343-461f6fa87a4b}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\ScanResult">
+      <UniqueIdentifier>{739676bd-6847-4ac9-8272-4dda04d55b29}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\ScanResult">
+      <UniqueIdentifier>{a61074fd-475c-42c5-b2fa-22db78583a4c}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -81,6 +87,12 @@
     <ClCompile Include="ipv4_range.cpp">
       <Filter>Source Files\Device</Filter>
     </ClCompile>
+    <ClCompile Include="scan_result.cpp">
+      <Filter>Source Files\ScanResult</Filter>
+    </ClCompile>
+    <ClCompile Include="found_host.cpp">
+      <Filter>Source Files\ScanResult</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="main.h">
@@ -133,6 +145,12 @@
     </ClInclude>
     <ClInclude Include="ipv4_range.h">
       <Filter>Header Files\Device</Filter>
+    </ClInclude>
+    <ClInclude Include="scan_result.h">
+      <Filter>Header Files\ScanResult</Filter>
+    </ClInclude>
+    <ClInclude Include="found_host.h">
+      <Filter>Header Files\ScanResult</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

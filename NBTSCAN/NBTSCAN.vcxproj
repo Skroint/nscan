@@ -124,6 +124,7 @@
     <ClCompile Include="console_tools.cpp" />
     <ClCompile Include="device_address.cpp" />
     <ClCompile Include="device_manager.cpp" />
+    <ClCompile Include="found_host.cpp" />
     <ClCompile Include="headers.cpp" />
     <ClCompile Include="host.cpp" />
     <ClCompile Include="host_scanner.cpp" />
@@ -131,6 +132,7 @@
     <ClCompile Include="ipv4_range.cpp" />
     <ClCompile Include="mac_address.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="scan_result.cpp" />
     <ClCompile Include="target.cpp" />
     <ClCompile Include="tcp_host_scanner.cpp" />
   </ItemGroup>
@@ -143,6 +145,7 @@
     <ClInclude Include="console_tools.h" />
     <ClInclude Include="device_address.h" />
     <ClInclude Include="device_manager.h" />
+    <ClInclude Include="found_host.h" />
     <ClInclude Include="headers.h" />
     <ClInclude Include="host.h" />
     <ClInclude Include="host_scanner.h" />
@@ -150,6 +153,7 @@
     <ClInclude Include="ipv4_range.h" />
     <ClInclude Include="mac_address.h" />
     <ClInclude Include="main.h" />
+    <ClInclude Include="scan_result.h" />
     <ClInclude Include="target.h" />
     <ClInclude Include="tcp_host_scanner.h" />
   </ItemGroup>
