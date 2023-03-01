@@ -78,6 +78,9 @@
     <ClCompile Include="console_tools.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="ipv4_range.cpp">
+      <Filter>Source Files\Device</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="main.h">
@@ -127,6 +130,9 @@
     </ClInclude>
     <ClInclude Include="console_tools.h">
       <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ipv4_range.h">
+      <Filter>Header Files\Device</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

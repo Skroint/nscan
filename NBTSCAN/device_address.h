@@ -2,7 +2,7 @@
 #include <string>
 #include "ipv4_address.h"
 #include "mac_address.h"
-
+#include "ipv4_range.h"
 #include <pcap.h>
 
 
@@ -16,6 +16,7 @@ public:
 	ipv4_address mask;
 	mac_address mac;
 
+	ipv4_range get_range();
 
 
 };

@@ -45,6 +45,7 @@
 #include <winsock2.h>
 #include <iostream>
 #include "device_manager.h"
+#include "console_tools.h"
 
 bool load_npcap_dll()
 {
@@ -71,6 +72,7 @@ bool load_npcap_dll()
 
 int main()
 {
+	console_tools ct(true);
 	if (!load_npcap_dll())
 	{
 		fprintf(stderr, "Couldn't load Npcap\n");
@@ -78,8 +80,13 @@ int main()
 
 	device_manager manager;
 	manager.print_all_addresses();
+	device_address device_address = manager.get_device_address();
+
+	ct.write_line("Scanning");
+	device_address.get_range().print();
 
 
+	std::cin.get();
 	std::cin.get();
 
 	return 0;

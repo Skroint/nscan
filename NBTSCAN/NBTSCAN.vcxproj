@@ -128,6 +128,7 @@
     <ClCompile Include="host.cpp" />
     <ClCompile Include="host_scanner.cpp" />
     <ClCompile Include="ipv4_address.cpp" />
+    <ClCompile Include="ipv4_range.cpp" />
     <ClCompile Include="mac_address.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="target.cpp" />
@@ -146,6 +147,7 @@
     <ClInclude Include="host.h" />
     <ClInclude Include="host_scanner.h" />
     <ClInclude Include="ipv4_address.h" />
+    <ClInclude Include="ipv4_range.h" />
     <ClInclude Include="mac_address.h" />
     <ClInclude Include="main.h" />
     <ClInclude Include="target.h" />

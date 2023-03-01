@@ -39,9 +39,8 @@ void device_manager::load_devices()
 			dev_address.device_description = adapter->Description;
 			dev_address.mac = mac_address::from_octets(adapter->Address);
 		
-			std::string tesst = std::string(adapter_address->IpAddress.String);
-			dev_address.ip = ipv4_address::from_string(tesst);
-			dev_address.mask = ipv4_address::from_string(std::string(adapter_address->IpAddress.String));
+			dev_address.ip = ipv4_address::from_string(adapter_address->IpAddress.String);
+			dev_address.mask = ipv4_address::from_string(adapter_address->IpMask.String);
 			
 			adapter_address = adapter_address->Next;
 			addresses.push_back(dev_address);
@@ -90,6 +89,17 @@ void device_manager::print_all_addresses()
 		std::cout << std::endl;
 		index++;
 	}
+}
+
+device_address device_manager::get_device_address()
+{
+	console_tools ct(true);
+	int index = 0;
+	
+	ct.write_line("Select interface:");
+	std::cin >> index;
+
+	return all_addresses[index];
 }
 
 
