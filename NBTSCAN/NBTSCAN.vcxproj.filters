@@ -93,6 +93,9 @@
     <ClCompile Include="found_host.cpp">
       <Filter>Source Files\ScanResult</Filter>
     </ClCompile>
+    <ClCompile Include="scan_manager.cpp">
+      <Filter>Source Files\HostScanning</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="main.h">
@@ -151,6 +154,9 @@
     </ClInclude>
     <ClInclude Include="found_host.h">
       <Filter>Header Files\ScanResult</Filter>
+    </ClInclude>
+    <ClInclude Include="scan_manager.h">
+      <Filter>Header Files\HostScanning</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

@@ -7,6 +7,8 @@ class arp_host_scanner :
 {
 public:
     std::vector<std::string> scan(std::vector<std::string> targets) override;
+    void scan(scan_result* sr, const std::vector<ipv4_address>& addresses) override;
+
 };
 
 
