@@ -5,6 +5,6 @@ class tcp_host_scanner :
     public host_scanner
 {
 public:
-    virtual std::vector<std::string> scan(std::vector<std::string> targets) override;
+   // virtual std::vector<std::string> scan(std::vector<std::string> targets) override;
 };
 

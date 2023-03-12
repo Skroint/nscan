@@ -46,6 +46,7 @@
 #include <iostream>
 #include "device_manager.h"
 #include "console_tools.h"
+#include "scan_manager.h"
 
 bool load_npcap_dll()
 {
@@ -80,11 +81,13 @@ int main()
 
 	device_manager manager;
 	manager.print_all_addresses();
-	device_address device_address = manager.get_device_address();
+	device_address da = manager.get_device_address();
 
 	ct.write_line("Scanning");
-	device_address.get_range().print();
+	da.get_range().print();
 
+	scan_manager sm;
+	sm.scan(da);
 
 	std::cin.get();
 	std::cin.get();

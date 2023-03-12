@@ -12,9 +12,9 @@ scan_result scan_manager::scan(device_address da)
 	std::vector<ipv4_address> addresses = range.get_addresses();
 	scan_result sr = scan_result::initialize(addresses.size());
 
-	for (auto scanner : scanners)
+	for (auto& scanner : scanners)
 	{
-		scanner.scan(&sr, addresses);
+		scanner.scan(&sr, addresses, da);
 	}
 
 	return scan_result();
